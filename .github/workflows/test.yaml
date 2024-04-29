@@ -1,0 +1,16 @@
+name: first workflow academy
+
+on:
+  push:
+    branches: [ daninatest ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4 #echivalent import checkout from actions
+
+      - name: nume stepgi
+        run: sleep 10 | echo 'Hello'
+
